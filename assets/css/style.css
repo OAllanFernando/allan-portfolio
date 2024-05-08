@@ -180,6 +180,15 @@ article {
   z-index: 1;
 }
 
+.tags{
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  gap: 10px;
+
+}
+
+
 .icon-box::before {
   content: "";
   position: absolute;

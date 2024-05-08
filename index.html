@@ -48,12 +48,15 @@
         <div class="info-content">
           <h1 class="name" title="Allan Fernando">Allan Fernando O de Andrade</h1>
 
-          <p class="title">Software Engineer</p>
+          <div class="tags">
+            <p class="title" id="job">Software Engineer</p>
+            <p class="title" id="otherJob">FullStack Developer</p>
+            
+          </div>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
+          <span id="contact">Show Contacts</span>
           <ion-icon name="chevron-down"></ion-icon>
         </button>
 
@@ -100,7 +103,7 @@
             <div class="contact-info">
               <p class="contact-title">Github</p>
 
-              <a href="https://github.com/OAllanFernando" class="contact-link">https://github.com/OAllanFernando</a>
+              <a href="https://github.com/OAllanFernando" class="contact-link">github.com/OAllanFernando</a>
             </div>
 
           </li>
@@ -115,6 +118,20 @@
               <p class="contact-title">Location</p>
 
               <address>Paraná, Brazil</address>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="clipboard-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title" id="curricu">Curriculum</p>
+
+              <a href="https://docs.google.com/document/d/1U2yRPYuPiMIkF9QZn4H_20Vfw3B7bEx_d7uFKnmjAc0/edit?usp=sharing" class="contact-link">docs.google.com/document/curriculum/allan</a>
             </div>
 
           </li>
@@ -156,11 +173,11 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link >About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link >Resume</button>
           </li>
 
           <li class="navbar-item">
@@ -169,6 +186,14 @@
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+
+          <li>
+            <div class="tags">
+              <button id="toggle-language">
+                <img src="./assets/images/usa.svg" alt="Web development icon" id="language-icon" width="30">
+              </button>
+            </div>
           </li>
 
         </ul>
@@ -182,20 +207,20 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title" id="titleMainOne">About</h2>
         </header>
 
         <section class="about-text">
-          <p>
+          <p id="textOne">
             I'm a Brazilian full-stack developer, passionate about innovation and problem-solving. With expertise in
             both front-end and back-end development, I excel in crafting intuitive user interfaces and architecting
             robust solutions. From HTML/CSS to Node.js and Spring Boot, I tackle every aspect of the development
             process, constantly seeking new challenges to expand my skill set. <br>
           </p>
 
-          <h1>Description</h1>
+          <h1 id="descricao">Description</h1>
 
-          <p>
+          <p id="textDuo">
             I am an undergraduate Software Engineer from the Federal Institute of Paraná, Brazil. This is my portfolio,
             where I will showcase a little of my tech stack, test projects for vacancies, college projects, and training
             projects.
@@ -209,7 +234,7 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What I Do</h3>
+          <h3 class="h3 service-title" id="what">What I Do</h3>
 
           <ul class="service-list">
 
@@ -221,9 +246,9 @@
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Mobile Development</h4>
+                  <h4 class="h4 service-item-title" id="mobile">Mobile Development</h4>
 
-                  <p class="service-item-text">
+                  <p class="service-item-text" id="textMobile">
                     With expertise in both native, cross-platform, and Progressive Web App (PWA) development, I excel in
                     crafting intuitive mobile solutions. Leveraging technologies like React Native, Flutter, and PWA
                     standards, I ensure seamless user experiences while collaborating closely with teams to deliver
@@ -244,7 +269,7 @@
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Front-end</h4>
 
-                  <p class="service-item-text">
+                  <p class="service-item-text" id="textFront">
                     Specializing in creating modern and high-quality web interfaces, I leverage HTML/CSS, JavaScript,
                     and React.js to craft engaging user experiences. With a keen eye for design and functionality, I
                     ensure that each web application I develop is both visually appealing and user-friendly.
@@ -266,7 +291,7 @@
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Back-end</h4>
 
-                  <p class="service-item-text">
+                  <p class="service-item-text" id="textBack">
                     Bringing extensive expertise in back-end web development, I proficiently utilize
                     JavaScript/TypeScript with Express.js for the Node.js runtime environment. Additionally, my skills
                     extend to Java's Spring Boot framework, where I deliver robust and scalable back-end solutions that
@@ -317,10 +342,10 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="resume" data-page="resume" >
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title" id="resume">Resume</h2>
         </header>
 
         <section class="timeline">
@@ -330,17 +355,17 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Education</h3>
+            <h3 class="h3" id="education">Education</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Federal Institute of Paraná</h4>
+              <h4 class="h4 timeline-item-title" id="institute">Federal Institute of Paraná</h4>
 
-              <span>2020 — today</span>
-              <p class="timeline-text">
+              <span id="dateEduc">2020 — today</span>
+              <p class="timeline-text" id="textEduc">
                 Bachelorship in Software Engineering; Expected graduation date: Dec. 2024
               </p>
 
@@ -360,7 +385,7 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3" id="xp">Experience</h3>
           </div>
 
           <ol class="timeline-list">
@@ -368,23 +393,25 @@
             <li class="timeline-item">
 
               <a href="https://www.apicesistemas.com.br/index">
-                <h4 class="h4 timeline-item-title">Ápice Sistemas - FullStack Developer</h4>
+                <h4 class="h4 timeline-item-title" id="company">Ápice Sistemas - FullStack Developer</h4>
               </a>
 
-              <span>May 2023 — May 2024</span>
+              <span id="dateJob">May 2023 — May 2024</span>
 
-              <p class="timeline-text">
-                Lead the creation, refactoring, and maintenance of local (Brazilian) web services, optimizing for
-                enhanced performance on low-resource devices.
+              <p class="timeline-text" id="textJobOne">
+                Contributing to the creation, refactoring and maintenance of web services, optimizing for better
+                performance on low-resource devices.
               </p>
-              <p class="timeline-text" style="margin-top: 10px;">
-                Utilized more efficient and less complex data structures and SQL syntaxes to boost system performance.
+              <p class="timeline-text" style="margin-top: 10px;" id="textJobDuo">
+                Acting on restaurant management projects, from print server to stock control, condominium management,
+                specifically access control with biometric recognition, integration with ERP, among other projects
+                provided by the company
               </p>
-              <p class="timeline-text" style="margin-top: 10px;">
+              <p class="timeline-text" style="margin-top: 10px;" id="textJobTree">
                 Applied agile methodologies, including Scrum with Kanban usage, teamwork, and deployment to local and
-                cloud servers using CI/CD Pipelines, Docker and Cloudflare .
+                cloud servers using CI/CD Pipelines, Docker and Cloudflare.
               </p>
-              <p class="timeline-text" style="margin-top: 10px;">
+              <p class="timeline-text" style="margin-top: 10px;" id="tecOne">
                 Technologies: JavaScript, Node.js, React.js, React Native, Express.js, MySQL, Git, GitHub
               </p>
 
@@ -396,18 +423,18 @@
                 <h4 class="h4 timeline-item-title">AiqFome/GrandChef - HelpDesk</h4>
               </a>
 
-              <span>August 2021 — April 2023</span>
+              <span id="dateDuo">August 2021 — April 2023</span>
 
-              <p class="timeline-text" style="margin-top: 10px;">
+              <p class="timeline-text" style="margin-top: 10px;" id="textJobDuoOne">
                 Orchestrated comprehensive user experience initiatives, ensuring client satisfaction and streamlined
                 interactions.
               </p>
-              <p class="timeline-text" style="margin-top: 10px;">
+              <p class="timeline-text" style="margin-top: 10px;" id="textJobDuoDuo">
                 Oversaw integration and maintenance projects, providing guidance to junior team members. Prioritized
                 enhancing
                 UX/UI for seamless user engagement.
               </p>
-              <p class="timeline-text" style="margin-top: 10px;">
+              <p class="timeline-text" style="margin-top: 10px;" id="tecJobDuo">
                 Technologies: MySQL
               </p>
 
@@ -426,7 +453,7 @@
       <article class="portfolio" data-page="portfolio">
 
         <header>
-          <h2 class="h2 article-title">Projects</h2>
+          <h2 class="h2 article-title" id="projectText">Projects</h2>
         </header>
 
         <section class="projects">
@@ -446,25 +473,26 @@
           <ul class="project-list">
 
             <li class="project-item active" data-filter-item data-category="3d modeling">
-              <h3 class="project-title">Loan and Concessions Management System for Students and Externals</h3>
+              <h3 class="project-title" id="projectOne">Loan and Concessions Management System for Students and
+                Externals</h3>
               <a href="./assets/images/homeArmarios.png">
                 <img src="./assets/images/homeArmarios.png"
                   alt="Loan and Concessions Management System for Students and Externals" loading="lazy">
 
-                <p class="project-category">This project was born as a challenge for second-year engineering students in
-                  2022. Requested by the institute's employees, the best solution would be presented and implemented. It
-                  consists of a system that allows the student to log in and borrow lockers, recording the time and who
-                  lent it. It also allows employees to grant lockers to people outside the institute. The project
-                  innovated the way loans are made, since students only need the loan terminal and no longer require
-                  assistance from servers. The project was implemented in September 2023 and is still in use at the
-                  Paranavaí Campus library.</p>
-                <p class="project-category">
+                <p class="project-category" id="projectOneTextOne">This project was born as a challenge for second-year
+                  engineering students in 2022. Requested by institute employees, the best solution would be presented
+                  and, if approved, deployed. It consists of a system that allows students to log in and borrow lockers,
+                  recording the time and who borrowed them. It also allows employees to grant lockers to people outside
+                  the institute by registering the concession. The project innovated the way loans are made, since
+                  students only need the loan terminal and no longer need assistance from servers. The project was
+                  deployed in September 2023 and is still in use at the Paranavaí Campus library.</p>
+                <p class="project-category" id="projectOneTec">
                   Technologies: Java, Hibernate, MVC pattern, PostgreSQL, Java Swing, Git, GitHub
                 </p>
               </a>
 
               <a href="https://github.com/marceloTerencianiIFPR/ArmariosIFPR">
-                <p class="project-category">
+                <p class="project-category" id=projectOneRepo>
                   Repository: github.com/marceloTerencianiIFPR/ArmariosIFPR
                 </p>
               </a>
@@ -472,29 +500,30 @@
 
 
             <li class="project-item active" data-filter-item data-category="3d modeling">
-              <h3 class="project-title">Task registration system</h3>
+              <h3 class="project-title" id="projectDuo">Task registration system</h3>
               <a href="./assets/images/homeTasks.png">
                 <img src="./assets/images/homeTasks.png" alt="Task registration system" loading="lazy">
 
-                <p class="project-category">Task registration system with tags related to each task. A SPA was developed
-                  as a test for a company. It consists of Crud of tasks and tags with login and charts. JWT was used for
-                  authentication, and a holiday api was also used to specify the holiday on the selected dates.</p>
+                <p class="project-category" id="projectDuoTextOne">Task registration system with tags related to each
+                  task. A SPA was developed as a test for a company. It consists of task crud and tags with
+                  authentication and graphics. JWT was used for authentication, and a holidays API was also used to
+                  specify the holiday on the selected dates.</p>
 
               </a>
 
               <a href="https://github.com/OAllanFernando/agende-tarefas">
-                <p class="project-category">
+                <p class="project-category" id="projectDuoRepo">
                   Repository: github.com/OAllanFernando/agende-tarefas
                 </p>
-                <p class="project-category">
+                <p class="project-category" id="projectDuoTec">
                   Technologies: React, Git, GitHub
                 </p>
               </a>
               <a href="https://github.com/OAllanFernando/api-agende-tarefas">
-                <p class="project-category">
+                <p class="project-category" id="projectDuoRepoDuo">
                   Repository: github.com/OAllanFernando/api-agende-tarefas
                 </p>
-                <p class="project-category">
+                <p class="project-category" id="projectDuoTecDuo">
                   Technologies: Java, Spring Boot, JWT, MySql, Git, GitHub
                 </p>
               </a>
@@ -502,29 +531,31 @@
 
 
             <li class="project-item active" data-filter-item data-category="3d modeling">
-              <h3 class="project-title">IVendi, selling products system</h3>
+              <h3 class="project-title" id="projectTree">IVendi, selling products system</h3>
               <a href="./assets/images/ivendi.png">
                 <img src="./assets/images/ivendi.png" alt="Task registration system" loading="lazy">
 
-                <p class="project-category">Product sales system, carried out as a test for a company. Crud of
-                  Customers, cities, products and neighborhoods, the system has a shopping cart layout, records and
+                <p class="project-category" id="projectTreeText">Product sales system, carried out as a test for a
+                  company. Crud of
+                  Customers, cities, states, products and neighborhoods, the system has a shopping cart layout, records
+                  and
                   lists sales. Developed to demonstrate logical skills and proficiency in the technologies covered.</p>
 
               </a>
 
               <a href="https://github.com/OAllanFernando/iVendi">
-                <p class="project-category">
+                <p class="project-category" id="projectTreeRepo">
                   Repository: github.com/OAllanFernando/iVendi
                 </p>
-                <p class="project-category">
+                <p class="project-category" id="projectTreeTec">
                   Technologies: React, Git, GitHub
                 </p>
               </a>
               <a href="https://github.com/OAllanFernando/API_NODE-RegistroDeVendas">
-                <p class="project-category">
+                <p class="project-category" id="projectTreeRepoDuo">
                   Repository: github.com/OAllanFernando/API_NODE-RegistroDeVendas
                 </p>
-                <p class="project-category">
+                <p class="project-category" id="projectTreeTecDuo">
                   Technologies: Node.js, Sequelize, MySql, Git, GitHub
                 </p>
               </a>
@@ -532,19 +563,20 @@
 
 
             <li class="project-item active" data-filter-item data-category="3d modeling">
-              <h3 class="project-title">Sell Me, site to sell package sales sites and system plans</h3>
+              <h3 class="project-title" id="projectFour">Sell Me, site to sell package sales sites and system plans</h3>
               <a href="./assets/images/in-progress.svg">
                 <img src="./assets/images/in-progress.svg" alt="Task registration system" loading="lazy">
 
-                <p class="project-category">Project will make it possible to purchase websites to sell plans and system
+                <p class="project-category" id="projectFourText">Project will make it possible to purchase websites to
+                  sell plans and system
                   packages of different types.</p>
-                <p class="project-category">
+                <p class="project-category" id="progress">
                   In progress
                 </p>
               </a>
 
               <a>
-                <p class="project-category">
+                <p class="project-category" id="projectFourTec">
                   Technologies: Python, Django, GitHub, Git, AWS, EC2, S3, MySQL
                 </p>
               </a>
@@ -554,21 +586,22 @@
             <div class="separatorOne"></div>
 
             <li class="project-item active" data-filter-item data-category="3d modeling">
-              <h3 class="project-title">course completion work, javascript locker system</h3>
+              <h3 class="project-title" id="projectFive">course completion work, javascript locker system</h3>
               <a href="./assets/images/in-progress.svg">
                 <img src="./assets/images/in-progress.svg" alt="course completion work, javascript locker system"
                   loading="lazy">
 
-                <p class="project-category">It was proposed to the collegiate to transcribe the federal institute's
+                <p class="project-category" id="projectFiveText">It was proposed to the collegiate to transcribe the
+                  federal institute's
                   cabinet system from Java to Javascript, to explain the differences in development between
                   technologies, changing from desktop to web.</p>
-                <p class="project-category">
+                <p class="project-category" id="progressOne">
                   In progress
                 </p>
               </a>
 
               <a>
-                <p class="project-category">
+                <p class="project-category" id="projectFiveTec">
                   Technologies: Javascript, Node.js, Electron.js, Git, PostgreSQL
                 </p>
               </a>
@@ -592,12 +625,12 @@
       <article class="contact" data-page="skills">
 
         <header>
-          <h2 class="h2 article-title">Skills</h2>
+          <h2 class="h2 article-title" id="habilidades">Skills</h2>
         </header>
 
         <section class="skill">
 
-          <h3 class="h3 skills-title">Languages</h3>
+          <h3 class="h3 skills-title" id="ling">Languages</h3>
 
           <ul class="skills-list content-card">
             <li class="skills-item">
@@ -753,26 +786,44 @@
           <ul class="skills-list content-card">
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">Agile Methodologies</h5>
-              </div>
-            </li>
-            <!-- Insert other soft skills here -->
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Effective Communication</h5>
+                <h5 class="h5" id="metodologias">Agile Methodologies</h5>
               </div>
             </li>
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">Problem-solving</h5>
+                <h5 class="h5" id="communication">Effective Communication</h5>
               </div>
             </li>
             <li class="skills-item">
               <div class="title-wrapper">
-                <h5 class="h5">Good Neighbor</h5>
+                <h5 class="h5" id="solving">Problem-solving</h5>
               </div>
             </li>
-            <!-- Additional soft skills here -->
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" id="vizinho">Good Neighbor</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" id="teamwork">Teamwork</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" id="time-management">Time Management</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" id="stress-management">Stress Management</h5>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" id="resilience">Resilience</h5>
+              </div>
+            </li>
           </ul>
 
 
@@ -797,6 +848,224 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <script>
+    const toggleLanguageButton = document.getElementById('toggle-language');
+    const languageIcon = document.getElementById('language-icon');
+
+    toggleLanguageButton.addEventListener('click', () => {
+      const currentLanguage = document.documentElement.lang; // Obtenha o valor atualizado do idioma
+      const job = document.getElementById('job');
+      const titleMainOne = document.getElementById('titleMainOne');
+      const textOne = document.getElementById('textOne');
+      const descricao = document.getElementById('descricao');
+      const textDuo = document.getElementById('textDuo');
+      const what = document.getElementById('what');
+      const mobile = document.getElementById('mobile');
+      const textMobile = document.getElementById('textMobile');
+      const textFront = document.getElementById('textFront');
+      const textBack = document.getElementById('textBack');
+      const resume = document.getElementById('resume');
+      const education = document.getElementById('education');
+      const institute = document.getElementById('institute');
+      const dateEduc = document.getElementById('dateEduc');
+      const textEduc = document.getElementById('textEduc');
+      const xp = document.getElementById('xp');
+      const company = document.getElementById('company');
+      const dateJob = document.getElementById('dateJob');
+      const textJobOne = document.getElementById('textJobOne');
+      const textJobDuo = document.getElementById('textJobDuo');
+      const textJobTree = document.getElementById('textJobTree');
+      const tecOne = document.getElementById('tecOne');
+      const dateDuo = document.getElementById('dateDuo');
+      const textJobDuoOne = document.getElementById('textJobDuoOne');
+      const textJobDuoDuo = document.getElementById('textJobDuoDuo');
+      const tecJobDuo = document.getElementById('tecJobDuo');
+      const projectText = document.getElementById('projectText');
+      const projectOne = document.getElementById('projectOne');
+      const projectOneTextOne = document.getElementById('projectOneTextOne');
+      const projectOneTec = document.getElementById('projectOneTec');
+      const projectOneRepo = document.getElementById('projectOneRepo');
+      const projectDuo = document.getElementById('projectDuo');
+      const projectDuoTextOne = document.getElementById('projectDuoTextOne');
+      const projectDuoRepo = document.getElementById('projectDuoRepo');
+      const projectDuoTec = document.getElementById('projectDuoTec');
+      const projectDuoRepoDuo = document.getElementById('projectDuoRepoDuo');
+      const projectDuoTecDuo = document.getElementById('projectDuoTecDuo');
+      const projectTree = document.getElementById('projectTree');
+      const projectTreeText = document.getElementById('projectTreeText');
+      const projectTreeRepo = document.getElementById('projectTreeRepo');
+      const projectTreeTec = document.getElementById('projectTreeTec');
+      const projectTreeRepoDuo = document.getElementById('projectTreeRepoDuo');
+      const projectTreeTecDuo = document.getElementById('projectTreeTecDuo');
+      const projectFour = document.getElementById('projectFour');
+      const projectFourText = document.getElementById('projectFourText');
+      const progress = document.getElementById('progress');
+      const projectFourTec = document.getElementById('projectFourTec');
+      const projectFive = document.getElementById('projectFive');
+      const projectFiveText = document.getElementById('projectFiveText');
+      const progressOne = document.getElementById('progressOne');
+      const projectFiveTec = document.getElementById('projectFiveTec');
+      const habilidades = document.getElementById('habilidades');
+      const ling = document.getElementById('ling');
+      const metodologias = document.getElementById('metodologias');
+      const communication = document.getElementById('communication');
+      const solving = document.getElementById('solving');
+      const vizinho = document.getElementById('vizinho');
+      const teamwork = document.getElementById('teamwork');
+      const timemanagement = document.getElementById('time-management');
+      const stressmanagement = document.getElementById('stress-management');
+      const resilience = document.getElementById('resilience');
+      const otherJob = document.getElementById('otherJob');
+      const contact = document.getElementById('contact');
+      const curricu = document.getElementById('curricu');
+
+
+
+      if (currentLanguage === 'en') {
+        console.log('pt-br');
+        document.documentElement.lang = 'pt-br';
+        languageIcon.src = "./assets/images/br.svg"; // Altere o caminho para a bandeira portuguesa
+        job.innerHTML = 'Engenheiro de Software'; // Altere o título do trabalho para português
+        
+        titleMainOne.innerHTML = 'Sobre'; // Altere o título do trabalho para português
+        textOne.innerHTML = 'Sou um desenvolvedor full-stack brasileiro, apaixonado por inovação e resolução de problemas. Com expertise em desenvolvimento front-end e back-end, me destaco na criação de interfaces de usuário intuitivas e na arquitetura de soluções robustas. De HTML/CSS a Node.js e Spring Boot, abordo todos os aspectos do processo de desenvolvimento, buscando constantemente novos desafios para expandir meu conjunto de habilidades.';
+        descricao.innerHTML = 'Descrição';
+        textDuo.innerHTML = 'Sou um estudante de Engenharia de Software do Instituto Federal do Paraná, Brasil. Este é meu portfólio, onde mostrarei um pouco da minha experiência técnica, projetos de teste para vagas, projetos de faculdade e projetos de treinamento.';
+        what.innerHTML = 'O que eu faço';
+        mobile.innerHTML = 'Desenvolvimento Mobile';
+        textMobile.innerHTML = 'Com expertise em desenvolvimento nativo, multiplataforma e Progressive Web App (PWA), me destaco na criação de soluções móveis intuitivas. Utilizando tecnologias como React Native, Flutter e padrões PWA, garanto experiências de usuário perfeitas, colaborando de perto com equipes para fornecer aplicativos impactantes.';
+        textFront.innerHTML = 'Especializado na criação de interfaces web modernas e de alta qualidade, aproveito HTML/CSS, JavaScript e React.js para criar experiências de usuário envolventes. Com um olhar atento para o design e a funcionalidade, garanto que cada aplicativo web que desenvolvo seja visualmente atraente e fácil de usar. Além disso, minha experiência se estende ao desenvolvimento de designs responsivos, garantindo experiências perfeitas em vários dispositivos e tamanhos de tela.';
+        textBack.innerHTML = 'Trabalhando com extensa experiência em desenvolvimento web back-end, utilizo proficientemente JavaScript/TypeScript com Express.js para o ambiente de execução Node.js. Além disso, minhas habilidades se estendem ao framework Spring Boot do Java, onde entrego soluções back-end robustas e escaláveis que alimentam aplicativos web modernos. Com foco em desempenho e confiabilidade, projeto e implemento arquiteturas eficientes do lado do servidor, garantindo integração perfeita com sistemas front-end e fornecendo funcionalidades seguras de gerenciamento de dados.';
+        resume.innerHTML = 'Currículo';
+        education.innerHTML = 'Educação';
+        institute.innerHTML = 'Instituto Federal do Paraná';
+        dateEduc.innerHTML = '2020 — hoje';
+        textEduc.innerHTML = 'Bacharelado em Engenharia de Software; Data de formatura prevista: Dez. 2024';
+        xp.innerHTML = 'Experiência';
+        company.innerHTML = 'Ápice Sistemas - Desenvolvedor FullStack';
+        dateJob.innerHTML = 'Maio 2023 — Maio 2024';
+        textJobOne.innerHTML = 'Contribuindo para a criação, refatoração e manutenção de serviços web, otimizando para melhor desempenho em dispositivos de baixos recursos.';
+        textJobDuo.innerHTML = 'Atuando em projetos de gestão de restaurantes, desde servidor de impressão até controle de estoque, gestão de condomínios, especificamente controle de acesso com reconhecimento biométrico, integração com ERP, entre outros projetos fornecidos pela empresa';
+        textJobTree.innerHTML = 'Aplicação de metodologias ágeis, incluindo Scrum com uso de Kanban, trabalho em equipe e implantação em servidores locais e em nuvem usando Pipelines CI/CD, Docker e Cloudflare.';
+        tecOne.innerHTML = 'Tecnologias: JavaScript, Node.js, React.js, React Native, Express.js, MySQL, Git, GitHub';
+        dateDuo.innerHTML = 'Agosto 2021 — Abril 2023';
+        textJobDuoOne.innerHTML = 'Orquestrei iniciativas abrangentes de experiência do usuário, garantindo a satisfação do cliente e interações simplificadas.';
+        textJobDuoDuo.innerHTML = 'Supervisionei projetos de integração e manutenção, fornecendo orientação a membros juniores da equipe. Priorizei aprimorar a UX/UI para um engajamento de usuário perfeito.';
+        tecJobDuo.innerHTML = 'Tecnologias: MySQL';
+        projectText.innerHTML = 'Projetos';
+        projectOne.innerHTML = 'Sistema de Gerenciamento de Empréstimos e Concessões para Alunos e Externos';
+        projectOneTextOne.innerHTML = 'Este projeto nasceu como um desafio para os alunos de engenharia do segundo ano em 2022. Solicitado pelos funcionários do instituto, a melhor solução seria apresentada e se aprovado, implantada. Consiste em um sistema que permite ao aluno fazer login e emprestar armários, registrando o horário e quem emprestou. Também permite que os funcionários concedam armários a pessoas de fora do instituto fazendo o registro da concessão. O projeto inovou a forma como os empréstimos são feitos, uma vez que os alunos só precisam do terminal de empréstimo e não precisam mais da assistência de servidores. O projeto foi implantado em setembro de 2023 e ainda está em uso na biblioteca do Campus Paranavaí.';
+        projectOneTec.innerHTML = 'Tecnologias: Java, Hibernate, padrão MVC, PostgreSQL, Java Swing, Git, GitHub';
+        projectOneRepo.innerHTML = 'Repositório: github.com/marceloTerencianiIFPR/ArmariosIFPR';
+        projectDuo.innerHTML = 'Sistema de registro de tarefas';
+        projectDuoTextOne.innerHTML = 'Sistema de registro de tarefas com tags relacionadas a cada tarefa. Uma SPA foi desenvolvida como teste para uma empresa. Consiste em Crud de tarefas e tags com autenticação e gráficos. JWT foi usado para autenticação, e uma api de feriados também foi usada para especificar o feriado nas datas selecionadas.';
+        projectDuoRepo.innerHTML = 'Repositório: github.com/OAllanFernando/agende-tarefas';
+        projectDuoTec.innerHTML = 'Tecnologias: React, Git, GitHub';
+        projectDuoRepoDuo.innerHTML = 'Repositório: github.com/OAllanFernando/api-agende-tarefas';
+        projectDuoTecDuo.innerHTML = 'Tecnologias: Java, Spring Boot, JWT, MySql, Git, GitHub';
+        projectTree.innerHTML = 'IVendi, sistema de vendas de produtos';
+        projectTreeText.innerHTML = 'Sistema de vendas de produtos, realizado como teste para uma empresa. Crud de Clientes, cidades, estados, produtos e bairros, o sistema tem um layout de carrinho de compras, registra e lista vendas. Desenvolvido para demonstrar habilidades lógicas e proficiência nas tecnologias abordadas.';
+        projectTreeRepo.innerHTML = 'Repositório: github.com/OAllanFernando/iVendi';
+        projectTreeTec.innerHTML = 'Tecnologias: React, Git, GitHub';
+        projectTreeRepoDuo.innerHTML = 'Repositório: github.com/OAllanFernando/API_NODE-RegistroDeVendas';
+        projectTreeTecDuo.innerHTML = 'Tecnologias: Node.js, Sequelize, MySql, Git, GitHub';
+        projectFour.innerHTML = 'Sell Me, site para vender sites de vendas de pacotes e planos de sistemas';
+        projectFourText.innerHTML = 'Projeto possibilitará a compra de sites para vender planos e pacotes de sistemas de diferentes tipos.';
+        progress.innerHTML = 'Em progresso';
+        projectFourTec.innerHTML = 'Tecnologias: Python, Django, GitHub, Git, AWS, EC2, S3, MySQL';
+        projectFive.innerHTML = 'trabalho de conclusão de curso, sistema de armários em javascript';
+        projectFiveText.innerHTML = 'Foi proposto ao colegiado transcrever o sistema de armários do instituto federal de Java para Javascript, para explicar as diferenças no desenvolvimento entre tecnologias, mudando de desktop para web.';
+        progressOne.innerHTML = 'Em progresso';
+        projectFiveTec.innerHTML = 'Tecnologias: Javascript, Node.js, Electron.js, Git, PostgreSQL';
+        habilidades.innerHTML = 'Habilidades';
+        ling.innerHTML = 'Linguagens';
+        metodologias.innerHTML = 'Metodologias Ágeis';
+        communication.innerHTML = 'Comunicação Eficaz';
+        solving.innerHTML = 'Resolução de Problemas';
+        vizinho.innerHTML = 'Bom Vizinho';
+        teamwork.innerHTML = 'Trabalho em Equipe';
+        timemanagement.innerHTML = 'Gestão do Tempo';
+        stressmanagement.innerHTML = 'Gestão do Estresse';
+        resilience.innerHTML = 'Resiliência';
+        otherJob.innerHTML = 'Desenvolvedor FullStack';
+        contact.innerHTML = 'Contato';
+        curricu.innerHTML = 'Currículo';
+
+
+      } else {
+        console.log('en');
+        document.documentElement.lang = 'en';
+        languageIcon.src = "./assets/images/usa.svg"; // Altere o caminho para a bandeira inglesa
+        job.innerHTML = 'Software Engineer'; // Altere o título do trabalho para inglês
+        
+        titleMainOne.innerHTML = 'About'; // Altere o título do trabalho para inglês
+        textOne.innerHTML = 'I\'m a Brazilian full-stack developer, passionate about innovation and problem-solving. With expertise in both front-end and back-end development, I excel in crafting intuitive user interfaces and architecting robust solutions. From HTML/CSS to Node.js and Spring Boot, I tackle every aspect of the development process, constantly seeking new challenges to expand my skill set.';
+        descricao.innerHTML = 'Description';
+        textDuo.innerHTML = 'I am an undergraduate Software Engineer from the Federal Institute of Paraná, Brazil. This is my portfolio, where I will showcase a little of my tech stack, test projects for vacancies, college projects, and training projects.';
+        what.innerHTML = 'What I Do';
+        mobile.innerHTML = 'Mobile Development';
+        textMobile.innerHTML = 'With expertise in both native, cross-platform, and Progressive Web App (PWA) development, I excel in crafting intuitive mobile solutions. Leveraging technologies like React Native, Flutter, and PWA standards, I ensure seamless user experiences while collaborating closely with teams to deliver impactful applications.';
+        textFront.innerHTML = 'Specializing in creating modern and high-quality web interfaces, I leverage HTML/CSS, JavaScript, and React.js to craft engaging user experiences. With a keen eye for design and functionality, I ensure that each web application I develop is both visually appealing and user-friendly. Additionally, my expertise extends to developing responsive designs, guaranteeing seamless experiences across various devices and screen sizes.';
+        textBack.innerHTML = 'Bringing extensive expertise in back-end web development, I proficiently utilize JavaScript/TypeScript with Express.js for the Node.js runtime environment. Additionally, my skills extend to Java\'s Spring Boot framework, where I deliver robust and scalable back-end solutions that power modern web applications. With a focus on performance and reliability, I design and implement efficient server-side architectures, ensuring seamless integration with front-end systems and providing secure data management functionalities.';
+        resume.innerHTML = 'Resume';
+        education.innerHTML = 'Education';
+        institute.innerHTML = 'Federal Institute of Paraná';
+        dateEduc.innerHTML = '2020 — today';
+        textEduc.innerHTML = 'Bachelorship in Software Engineering; Expected graduation date: Dec. 2024';
+        xp.innerHTML = 'Experience';
+        company.innerHTML = 'Ápice Sistemas - FullStack Developer';
+        dateJob.innerHTML = 'May 2023 — May 2024';
+        textJobOne.innerHTML = 'Contributing to the creation, refactoring and maintenance of web services, optimizing for better performance on low-resource devices.';
+        textJobDuo.innerHTML = 'Acting on restaurant management projects, from print server to stock control, condominium management, specifically access control with biometric recognition, integration with ERP, among other projects provided by the company';
+        textJobTree.innerHTML = 'Applied agile methodologies, including Scrum with Kanban usage, teamwork, and deployment to local and cloud servers using CI/CD Pipelines, Docker and Cloudflare.';
+        tecOne.innerHTML = 'Technologies: JavaScript, Node.js, React.js, React Native, Express.js, MySQL, Git, GitHub';
+        dateDuo.innerHTML = 'August 2021 — April 2023';
+        textJobDuoOne.innerHTML = 'Orchestrated comprehensive user experience initiatives, ensuring client satisfaction and streamlined interactions.';
+        textJobDuoDuo.innerHTML = 'Oversaw integration and maintenance projects, providing guidance to junior team members. Prioritized enhancing UX/UI for seamless user engagement.';
+        tecJobDuo.innerHTML = 'Technologies: MySQL';
+        projectText.innerHTML = 'Projects';
+        projectOne.innerHTML = 'Loan and Concessions Management System for Students and Externals';
+        projectOneTextOne.innerHTML = 'This project was born as a challenge for second-year engineering students in 2022. Requested by institute employees, the best solution would be presented and, if approved, deployed. It consists of a system that allows students to log in and borrow lockers, recording the time and who borrowed them. It also allows employees to grant lockers to people outside the institute by registering the concession. The project innovated the way loans are made, since students only need the loan terminal and no longer need assistance from servers. The project was deployed in September 2023 and is still in use at the Paranavaí Campus library.';
+        projectOneTec.innerHTML = 'Technologies: Java, Hibernate, MVC pattern, PostgreSQL, Java Swing, Git, GitHub';
+        projectOneRepo.innerHTML = 'Repository: github.com/marceloTerencianiIFPR/ArmariosIFPR';
+        projectDuo.innerHTML = 'Task registration system';
+        projectDuoTextOne.innerHTML = 'Task registration system with tags related to each task. A SPA was developed as a test for a company. It consists of task crud and tags with authentication and graphics. JWT was used for authentication, and a holidays API was also used to specify the holiday on the selected dates.';
+        projectDuoRepo.innerHTML = 'Repository: github.com/OAllanFernando/agende-tarefas';
+        projectDuoTec.innerHTML = 'Technologies: React, Git, GitHub';
+        projectDuoRepoDuo.innerHTML = 'Repository: github.com/OAllanFernando/api-agende-tarefas';
+        projectDuoTecDuo.innerHTML = 'Technologies: Java, Spring Boot, JWT, MySql, Git, GitHub';
+        projectTree.innerHTML = 'IVendi, selling products system';
+        projectTreeText.innerHTML = 'Product sales system, carried out as a test for a company. Crud of Customers, cities, states, products and neighborhoods, the system has a shopping cart layout, records and lists sales. Developed to demonstrate logical skills and proficiency in the technologies covered.';
+        projectTreeRepo.innerHTML = 'Repository: github.com/OAllanFernando/iVendi';
+        projectTreeTec.innerHTML = 'Technologies: React, Git, GitHub';
+        projectTreeRepoDuo.innerHTML = 'Repository: github.com/OAllanFernando/API_NODE-RegistroDeVendas';
+        projectTreeTecDuo.innerHTML = 'Technologies: Node.js, Sequelize, MySql, Git, GitHub';
+        projectFour.innerHTML = 'Sell Me, site to sell package sales sites and system plans';
+        projectFourText.innerHTML = 'Project will make it possible to purchase websites to sell plans and system packages of different types.';
+        progress.innerHTML = 'In progress';
+        projectFourTec.innerHTML = 'Technologies: Python, Django, GitHub, Git, AWS, EC2, S3, MySQL';
+        projectFive.innerHTML = 'course completion work, javascript locker system';
+        projectFiveText.innerHTML = 'It was proposed to the collegiate to transcribe the federal institute\'s cabinet system from Java to Javascript, to explain the differences in development between technologies, changing from desktop to web.';
+        progressOne.innerHTML = 'In progress';
+        projectFiveTec.innerHTML = 'Technologies: Javascript, Node.js, Electron.js, Git, PostgreSQL';
+        habilidades.innerHTML = 'Skills';
+        ling.innerHTML = 'Languages';
+        metodologias.innerHTML = 'Agile Methodologies';
+        communication.innerHTML = 'Effective Communication';
+        solving.innerHTML = 'Problem-solving';
+        vizinho.innerHTML = 'Good Neighbor';
+        teamwork.innerHTML = 'Teamwork';
+        timemanagement.innerHTML = 'Time Management';
+        stressmanagement.innerHTML = 'Stress Management';
+        resilience.innerHTML = 'Resilience';
+        otherJob.innerHTML = 'FullStack Developer';
+        contact.innerHTML = 'Show Contacts';
+        curricu.innerHTML = 'Curriculum';
+       
+
+      }
+    });
+  </script>
 </body>
 
 </html>

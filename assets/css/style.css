@@ -308,11 +308,29 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  width: 1000px;
-  max-height: 112px;
+  width: 100%;
+  max-height: 119px;
 }
 
-.sidebar.active { max-height: 405px; }
+@media screen and (max-width: 375px) {
+  .sidebar {
+    max-height: 150px;
+  }
+  .tags {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tags p.title {
+    width: 100%; /* Set the width to 100% */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis (...) when text overflows */
+  }
+}
+
+
+.sidebar.active { max-height: 500px; }
 
 .sidebar-info {
   position: relative;
@@ -1629,7 +1647,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .contacts-list { grid-template-columns: 1fr; }
 
   .contact-info :is(.contact-link) {
-    white-space: nowrap;
+    white-space: wrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }

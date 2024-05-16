@@ -711,7 +711,17 @@ main {
 }
 
 
+.title-wrapper {
+  display: flex;
+  align-items: center;
+}
 
+.circular-image {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  border-radius: 50%;
+  margin-right: 10px; /* Space between the image and text */
+}
 
 
 /*-----------------------------------*\
@@ -737,6 +747,7 @@ main {
   border-radius: 14px;
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+  display: none;
 }
 
 .filter-select.active .select-icon { transform: rotate(0.5turn); }

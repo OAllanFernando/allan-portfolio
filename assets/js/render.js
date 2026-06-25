@@ -25,6 +25,8 @@
     video: 'play-circle-outline',
     live: 'open-outline',
     store: 'phone-portrait-outline',
+    apple: 'logo-apple',
+    googleplay: 'logo-google-playstore',
     doc: 'document-outline',
   };
 

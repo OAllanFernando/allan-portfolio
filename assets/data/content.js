@@ -180,7 +180,10 @@ const CONTENT = {
             'Apache POI, enviados por WhatsApp. Desenvolvido e mantido sozinho, com 10 clientes ' +
             'pagantes e ~27 leads. Publicado na App Store e Google Play.',
           tags: ['React Native', 'Spring Boot', 'Apache POI', 'iOS', 'Android'],
-          links: [],
+          links: [
+            { label: 'App Store', url: 'https://apps.apple.com/br/app/vigilante-app/id6753926249', type: 'apple' },
+            { label: 'Google Play', url: 'https://play.google.com/store/apps/details?id=com.nightguard', type: 'googleplay' },
+          ],
         },
         {
           name: 'timemob',
@@ -455,7 +458,10 @@ const CONTENT = {
             'over WhatsApp. Built and maintained solo, with 10 paying customers and ~27 leads. ' +
             'Published on the App Store and Google Play.',
           tags: ['React Native', 'Spring Boot', 'Apache POI', 'iOS', 'Android'],
-          links: [],
+          links: [
+            { label: 'App Store', url: 'https://apps.apple.com/br/app/vigilante-app/id6753926249', type: 'apple' },
+            { label: 'Google Play', url: 'https://play.google.com/store/apps/details?id=com.nightguard', type: 'googleplay' },
+          ],
         },
         {
           name: 'timemob',
